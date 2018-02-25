@@ -2,5 +2,11 @@ spring:
   application:
     name: eureka-server
 eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+
+  instance:
+    prefer-ip-address: true
   server:
     enable-self-preservation: false

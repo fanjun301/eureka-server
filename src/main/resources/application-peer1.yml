@@ -2,7 +2,6 @@ server:
   port: 8761
 eureka:
   instance:
-    prefer-ip-address: true
     hostname: peer1
   client:
     service-url:

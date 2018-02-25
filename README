@@ -1,0 +1,14 @@
+#1 edit host file add below
+127.0.0.1 peer1,peer2
+
+#2 build jar file
+mvn clean package
+
+#3 go to jar directory
+cd target
+
+#4 run eureka server in ha mode
+
+java -jar eureka-server-1.0.0.jar --spring.profiles.active=peer1
+
+java -jar eureka-server-1.0.0.jar --spring.profiles.active=peer2
